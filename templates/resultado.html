@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados - Malasuerte</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Resultados del Sorteo</h1>
+        <p class="mensaje">Joder salio ganador</p>
+        {% for resultado in resultados %}
+            <div class="resultado">
+                <h2>Sorteo {{ resultado.sorteo }} (Serie {{ resultado.serie }})</h2>
+                <p><strong>Número Ganador:</strong> {{ resultado.numero_ganador }}</p>
+                <p><strong>Premio:</strong> ${{ "{:,.0f}".format(resultado.premio) }}</p>
+                <p><strong>Fecha de Emisión:</strong> {{ resultado.fecha }}</p>
+                <p class="ganador">¡Ganaste causa!</p>
+            </div>
+        {% endfor %}
+        <a href="{{ url_for('index') }}" class="boton">Volver al Inicio</a>
+    </div>
+</body>
+</html>

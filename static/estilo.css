@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #007bff;
+}
+
+.mensaje {
+    font-size: 18px;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.resultado {
+    background: #e3f2fd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.ganador {
+    font-size: 16px;
+    color: #d63384;
+    font-weight: bold;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background: #0056b3;
+}

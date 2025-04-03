@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malasuerte - Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a Malasuerte :v</h1>
+        <p>Prueba tu suerte en este juguito del chance.</p>
+        <a href="{{ url_for('resultado') }}" class="boton">Ver Resultado del Sorteo</a>
+    </div>
+</body>
+</html>
